@@ -23,7 +23,8 @@ app.get('/home', (req, res) => {
 })
 
 */
-app.use(notesRouter)
+// Using router
+app.use('/api/v1', notesRouter)
 /*
 app.get('/about', (req, res) => {
     res.send('Hello, Welcome to my second endpoint')
